@@ -1,95 +1,95 @@
 <!DOCTYPE html>
-<
-<
-    <
-    <
-    <
-    <
-{
-            font-family
-            background-color
-            margin0
-            padding20px
-            color
-            displayflex
-            justify-contentcenter
-            align-itemscenter
-            min-height100vh
-            overflowhidden
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小包社区网址发布首页</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden; /* 防止整体滚动 */
         }
-{
-            width100%
-            max-width700px
-            background
-            border-radius20px
-            box-shadow0 10px 30px rgba(0000.1)
-            padding30px
-            overflow-yauto
-            max-heightcalc(100vh40px)
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            overflow-y: auto; /* 允许容器内垂直滚动 */
+            max-height: calc(100vh - 40px); /* 最大高度，减去上下padding */
         }
-{
-            text-aligncenter
-            margin-bottom30px
-            font-size30px
-            font-weightbold
-            color
+        h2 {
+            text-align: center;
+            margin-bottom: 30px; /* 增加标题下方的间距 */
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
         }
-{
-            background
-            padding20px
-            margin15px 0
-            border-radius15px
-            box-shadow0 2px 10px rgba(0000.1)
-            transitiontransform 0.2sbackground 0.2s
+        .url-item {
+            background: #f9f9f9;
+            padding: 20px; /* 增加内边距 */
+            margin: 15px 0; /* 保持上下间距 */
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, background 0.2s;
         }
-hover {
-            transformtranslateY(-4px)
-            background
+        .url-item:hover {
+            transform: translateY(-4px);
+            background: #e6f7ff;
         }
-{
-            font-weightbold
-            color
-            margin-bottom10px
-            displayblock
+        .url-title {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px; /* 增加标题与链接之间的间距 */
+            display: block;
         }
-{
-            color
-            margin-bottom15px
-            displayblock
+        .url-link {
+            color: #555;
+            margin-bottom: 15px; /* 增加链接与按钮之间的间距 */
+            display: block;
         }
-{
-            width100%
-            padding12px
-            bordernone
-            border-radius10px
-            cursorpointer
-            background-color
-            colorwhite
-            font-size16px
-            transitionbackground-color 0.3stransform 0.2s
+        .copy-btn {
+            width: 100%;
+            padding: 12px; /* 增加按钮内边距 */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
         }
-hover {
-            background-color
-            transformscale(1.05)
+        .copy-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
         }
-    </>
-</>
-<
+    </style>
+</head>
+<body>
 
-<
-    <
-        <<<<<
-</>
+<div class="container">
+    <div class="urls">
+        <div class='url-item'><span class='url-title'>推荐使用谷歌(Chrome)浏览器访问本站，谷歌浏览器速度更快。<br>如果您记不住本页域名，请收藏该发布页地址。<br>遇到网站维护地址无法访问可以前往本页查看最新通知！</span><button class='copy-btn' onclick='copyToClipboard("https://www.qsbtxt.net/")'>复制</button></div></div>
+</div>
 
-<
-(url) {
-clipboardwriteText()then((){
-            alert(
-        }(err){
-error(
-        })
+<script>
+    function copyToClipboard(url) {
+        navigator.clipboard.writeText(url).then(() => {
+            alert("网址已复制: " + url);
+        }, (err) => {
+            console.error("复制失败: ", err);
+        });
     }
-</>
+</script>
 
-</>
-</>
+</body>
+</html>
